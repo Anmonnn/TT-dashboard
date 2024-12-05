@@ -39,7 +39,7 @@ export const DateTime: React.FC = () => {
         <p>{weekday}</p>
       </div>
 
-      <img src="/imgs/Cloud.svg" alt="Weather" />
+      <img src="./imgs/Cloud.svg" alt="Weather" />
       <div className="dashboard__dataTime-weather">
         <p className="temperature">11°C</p>
         <p className="description">Cloudy</p>

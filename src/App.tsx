@@ -28,7 +28,7 @@ export const App: React.FC = () => {
     <div
       className="dashboard"
       style={{
-        backgroundImage: `url(/imgs/BG-pexels-charlotte-may.svg)`,
+        backgroundImage: `url(./imgs/BG-pexels-charlotte-may.svg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
