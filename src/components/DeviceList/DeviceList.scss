@@ -1,0 +1,16 @@
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
+
+.dashboard__list {
+  padding: 105px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $lists-gap;
+
+  // max-width: $lists-max-width;
+  
+  // @include onTablet {
+  //   max-width: $lists-max-width / 2;
+  // }
+}

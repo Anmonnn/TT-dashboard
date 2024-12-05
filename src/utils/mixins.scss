@@ -1,0 +1,7 @@
+@import "../utils/variables.scss";
+
+@mixin onTablet {
+  @media (max-width: $lists-max-width) {
+    @content;
+  }
+}

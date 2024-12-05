@@ -1,0 +1,6 @@
+$items-width: 274px;
+$lists-gap: 10px;
+$datas-width: ($items-width * 3) + ($lists-gap * 2);
+$lists-max-width: ($datas-width * 2 + $lists-gap);
+
+$border-radius: 19px;
