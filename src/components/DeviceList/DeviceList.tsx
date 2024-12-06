@@ -10,9 +10,12 @@ interface T {
 }
 
 export const DeviceList: React.FC<T> = ({ devData }) => {
+  const CELL_SIZE = 284;
+  const LAST_GAP = 10;
+
   const { windowWidth } = useWindowSize();
   const [count, setCount] = useState<number>(6);
-  // windowWidth та count використовуються в логіці відображення кількості клітиновк, відповідно до розміру екрана пристою
+  // windowWidth та count використовуються в логіці відображення кількості клітинок, відповідно до розміру екрана пристою
   // Якщо ви вважаєте що, для такої маленької фічі це занадто, то можна видалити це та використати закоментовані стилі в 'DeviceList.scss'
 
   const updateCount = (width: number) => {
@@ -35,7 +38,7 @@ export const DeviceList: React.FC<T> = ({ devData }) => {
     <ul
       className="dashboard__list"
       style={{
-        width: `${count * 284 - 10}px`,
+        width: `${count * CELL_SIZE - LAST_GAP}px`,
       }}
     >
       <DateTime />
